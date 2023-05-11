@@ -1,0 +1,68 @@
+<html>
+<head>
+    <script src="https://ap-gateway.mastercard.com/checkout/version/61/checkout.js" data-error="errorCallback" data-cancel="cancelCallback"></script>
+
+    <script type="text/javascript">
+
+        function errorCallback(error) {
+            console.log(JSON.stringify(error));
+        }
+        function cancelCallback() {
+            console.log('Payment cancelled');
+        }
+        debugger
+        const urlParams = new URLSearchParams(window.location.search);
+        var SessionId;
+        var Merchant;
+        var InvoiceNumber;
+        //const myParam = urlParams.getAll('myParam');
+        for (const param of urlParams) {
+            if (param[0] == "SessionId") {
+                this.SessionId = param[1];
+                console.log(this.SessionId)
+            } else if (param[0] == "Merchant") {
+                this.Merchant = param[1];
+                console.log(this.Merchant)
+            }
+            else if (param[0] == "InvoiceNumber") {
+                this.InvoiceNumber = param[1];
+                console.log(this.InvoiceNumber)
+            }
+        }
+
+        Checkout.configure({
+            session: {
+                id: this.SessionId// 'SESSION0002486580938L8289360G98'
+
+            },
+            transaction: {
+                reference: this.InvoiceNumber
+            },
+
+            interaction: {
+                merchant: {
+                    name: this.Merchant,
+                    address: {
+                        line1: '200 Sample St',
+                        line2: '1234 Example Town'
+                    }
+                }
+            },
+            order: {
+                id: this.InvoiceNumber,
+                amount: '10',
+                currency: 'XOF',
+                description: 'Ezipay',
+                reference: this.InvoiceNumber
+            }
+        });
+        Checkout.showLightbox();
+    </script>
+</head>
+<body>
+    ...
+    <!-- <input type="button" value="Pay with Lightbox" onclick="Checkout.showLightbox();" /> -->
+    <!-- <input type="button" value="Pay with Payment Page" onclick="Checkout.showPaymentPage();" /> -->
+    ...
+</body>
+</html>

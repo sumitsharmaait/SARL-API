@@ -1,0 +1,109 @@
+﻿@model Ezipay.ViewModel.CardPaymentViewModel.MasterCardPaymentSaveResponse
+@{
+    ViewBag.Title = "SaveMasterCardPaymentResponse";
+}
+
+<div class="loader" id="hide">
+    <img src="~/WebImages/ezgif-2-6d0b072c3d3f.gif" />
+</div>
+@if (Model.RstKey == 0)
+{
+    <div class="outer_div">
+        <div class="container">
+            <div class="mainsec">
+                <div class="content">
+                    <img src="~/WebImages/mainlogo.png" class="logo" />
+                </div>
+
+                <div>
+                    <img src="~/WebImages/error.png" />
+                </div>
+
+                <div class="msg">
+                    <span>Transaction Failed </span>
+                </div>
+
+                <div class="amount">
+                    <a href="https://www.ezipaysarl.com/#/">Back To Home</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+<style>
+    .loader {
+        position: fixed;
+        z-index: 99;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+        .loader > img {
+            width: 200px;
+        }
+
+    .outer_div {
+        border-style: solid;
+        /*margin-right: 100px;
+        position: absolute;*/
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*display: flex;
+        justify-content: center;
+        align-items: center;*/
+    }
+
+    .mainsec {
+        width: 600px;
+        border: 1px solid #e5dfdf;
+        text-align: center;
+        margin: auto;
+        padding: 80px 50px;
+        border-radius: 30px;
+    }
+
+    .logo {
+        width: 210px;
+        padding: 20px 0;
+    }
+
+    .amount {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .timeicon {
+        width: 50px;
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .msg {
+        font-size: 30px;
+        padding: 10px 0;
+        color: gray;
+        font-size: 20px;
+    }
+
+    .amountt {
+        font-size: 30px;
+        padding: 10px 0;
+        color: steelblue;
+    }
+</style>
+
+
+
+

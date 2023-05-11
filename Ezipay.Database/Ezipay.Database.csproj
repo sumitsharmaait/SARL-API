@@ -1,0 +1,727 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{565EE271-3718-42F3-9776-C0B2CCCECDC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ezipay.Database</RootNamespace>
+    <AssemblyName>Ezipay.Database</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddDuringPayRecord.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminKey.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminMobileMoneyLimit.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPasswordHistory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPermission.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AdminUser.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AfroBasketData.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AfroBasketVerifyData.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="AppDownloadLog.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="balance161022.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="BankList.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Banner.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Callback.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CallbackListTracking.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cardnewaddrequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CardNoDuplicate.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CardPaymentRequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CardPaymentRequest_Back.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CardPaymentResponse.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Carduseinaddmoney.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Cashdeposituser_addmoney.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ChargeBack.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Commision.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommisionHistory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CommisionMaster.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Country.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CurrencyRate.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmailVerification.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emailverification_5_Dec_2017.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ErrorLog_06_Dec_2017.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ezipay.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ezipay.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ezipay.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Ezipay.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Ezipay.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="FAQ.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FaqDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FeedBackType.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlightBookingData.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="FlightHotelData.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="freezeuser.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="GetStats_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HotelBooking.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="HotelMaster.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MainCategory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterCardPaymentRequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MasterWalletService.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MerchantCommisionMaster.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MerchantDocument.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MerchantStore.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="MobileMoneySenderDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Navigation.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notification.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Notificationalert.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="notificationupdate.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="OneTimePassword.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PageInformation.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PasswordUpdateTracking.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="PayMoneyRequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomInvoiceNumber.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="RedeemPointsHistory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="senderIdTypetbl.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SendVerificationMail_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ServiceCategory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SessionToken.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SetTransactionLimit.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShareAndEarnDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ShareAndEarnMaster.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Split_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="SubCategory.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Subscription.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TempToken.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ThirdPartyPaymentByCard.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpSentEmail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="tmpVerificationEMail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionInitiateRequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionKey.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionLimitAU.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionLog.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionType.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransferToBankRequest.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransferToBankRequest1.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransferToBankResponse.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="TransferToBankResponse1.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserApiKey.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserBlockUnblockDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserData.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserDocument.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserReferalWallet.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="UserType.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_AccepPayMoneyRquest_back_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_AccepPayMoneyRquest_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_CallbackList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_CardAddMoney_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_CardTransactionDetailsUseList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_CheckAdminMobileMoneyLimit_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_CommissionListOfAllServices_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DeletedUserList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DepositorList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_DownloadMerchantList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_FaqDetails_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_FAQ_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_FeedBackTypes_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetAdminMobileMoneyLimit_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetAllTransactionByDateForAddMoneyReq_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetAllTransactionByDateForAddMoney_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetAllTransactionByDate_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetBannersFor_User_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetBanners_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usp_GetChannels_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Usp_GetChannels_Test_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCommisions_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCountry_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCurrencyLog_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetCurrencyRate_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDetailForBillPayment_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetDocumentDetails_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetHotels_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetInvoiceNumber_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetMainCategoryList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetNotificationalert_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Getnotificationdata_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getPageInformation_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRecent_Receiver_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetRedeem_History_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetSubCategoryList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetTransactionLimitAU_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetTransactionLimitByUserId_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetTransferToBankCountry_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getUserByEmailId_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_getUserByWalletuserId_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUserDetails_Franco_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_GetUserDetails_Ghana_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodesAddMonMobMonCountry_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodesForFrance1_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodesForFrance_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodesForXAF_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodesPayGhanaMobMon_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsdCodes_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_IsFirstTransaction_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_MainCategory_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_ManageWalletService_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_MarchantPaymentTransactionsDetailWithDateRange_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_MerchantList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_MerchantPayment_back_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_MerchantPayment_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_Merchants_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs12_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs1_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs_Download111_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs_Download_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs_Download_Test_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_NewFormate_TransactionLogs_Test_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PayEwalletToEwallet_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentRequest_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionReport_back_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionReport_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionsDetailWithDateRange_back_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionsDetailWithDateRange_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionsReportDownloadWithDateRange_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactionsWithDateRange_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactions_bkp_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactions_NewApp1_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactions_NewApp_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactions_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PaymentTransactions_Test_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_PendingKycUserList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SaveOtp_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectAddMoneyLimit_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectAllEmail_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SelectTransactionLimit_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_ServiceWiseTotalTransaction_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_subAdminCountries_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubadminList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubadminNavigation_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubCategoryForReport_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubCategory_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_SubscriptionLogs_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_TransactionLogs_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_txnlist_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserDetailById_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserDetailByToken_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserList1_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserListDownload_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserList_Test_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserNavigation_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_UserPayMoneyRequests_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_WalletServiceList_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_WalletService_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_WalletSummaryByService_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="usp_WalletSummary_Result.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewUserList.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="ViewVerificationMail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="vw_walletsummary.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Vw_wallettrans.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletMoMoOTP.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletService.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletService_bkp.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletSetting.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTransaction.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTransaction27_Nov_2017.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTransactionBack.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTransactionDetail.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTransaction_Back.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletTxnUpdateList.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WalletUser.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="webhookflutter.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+    <Compile Include="WrongPassword.cs">
+      <DependentUpon>Ezipay.tt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config">
+      <SubType>Designer</SubType>
+    </None>
+    <EntityDeploy Include="Ezipay.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Ezipay.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Ezipay.edmx.diagram">
+      <DependentUpon>Ezipay.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ezipay.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Ezipay.edmx</DependentUpon>
+      <LastGenOutput>Ezipay.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Ezipay.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Ezipay.edmx</DependentUpon>
+      <LastGenOutput>Ezipay.cs</LastGenOutput>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

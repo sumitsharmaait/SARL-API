@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8777E9B-AA11-4DB3-A843-E7E11A369104}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ezipay.Repository</RootNamespace>
+    <AssemblyName>Ezipay.Repository</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminRepo\Cashdepositrequest\CashdepositrequestRepository.cs" />
+    <Compile Include="AdminRepo\Cashdepositrequest\ICashdepositrequestRespository.cs" />
+    <Compile Include="AdminRepo\AdminMobileMoneyLimit\AdminMobileMoneyLimitRepository.cs" />
+    <Compile Include="AdminRepo\AdminMobileMoneyLimit\IAdminMobileMoneyLimitRespository.cs" />
+    <Compile Include="AdminRepo\AuthenticationApiRepo\AuthenticationApiRepository.cs" />
+    <Compile Include="AdminRepo\AuthenticationApiRepo\IAuthenticationApiRepository.cs" />
+    <Compile Include="AdminRepo\Banner\BannerRepository.cs" />
+    <Compile Include="AdminRepo\Banner\IBannerRepository.cs" />
+    <Compile Include="AdminRepo\Callback\CallbackRepository.cs" />
+    <Compile Include="AdminRepo\Callback\ICallbackRepository.cs" />
+    <Compile Include="AdminRepo\ChargeBack\ChargeBackRepository.cs" />
+    <Compile Include="AdminRepo\ChargeBack\IChargeBackRepository.cs" />
+    <Compile Include="AdminRepo\Commission\CommissionRepository.cs" />
+    <Compile Include="AdminRepo\Commission\ICommissionRepository.cs" />
+    <Compile Include="AdminRepo\CurrencyConvert\CurrencyRepository.cs" />
+    <Compile Include="AdminRepo\CurrencyConvert\ICurrencyRepository.cs" />
+    <Compile Include="AdminRepo\DashBoardRepo\DashBoardRepository.cs" />
+    <Compile Include="AdminRepo\DashBoardRepo\IDashBoardRepository.cs" />
+    <Compile Include="AdminRepo\Merchant\IMerchantRepository.cs" />
+    <Compile Include="AdminRepo\Merchant\MerchantRepository.cs" />
+    <Compile Include="AdminRepo\Report\IReportRepository.cs" />
+    <Compile Include="AdminRepo\Report\ReportRepository.cs" />
+    <Compile Include="AdminRepo\Resort\IResortRepository.cs" />
+    <Compile Include="AdminRepo\Resort\ResortRepository.cs" />
+    <Compile Include="AdminRepo\ReversalUBA\IReversalUBARepository.cs" />
+    <Compile Include="AdminRepo\ReversalUBA\ReversalUBARepository.cs" />
+    <Compile Include="AdminRepo\ShareAndEarn\IShareAndEarnRepository.cs" />
+    <Compile Include="AdminRepo\ShareAndEarn\ShareAndEarnRepository.cs" />
+    <Compile Include="AdminRepo\Subscription\ISubscriptionRepository.cs" />
+    <Compile Include="AdminRepo\Subscription\SubscriptionRepository.cs" />
+    <Compile Include="AdminRepo\TransactionLimitAU\ITransactionLimitAURespository.cs" />
+    <Compile Include="AdminRepo\TransactionLimitAU\TransactionLimitAURespository.cs" />
+    <Compile Include="AdminRepo\TransactionLog\ITransactionLogRepository.cs" />
+    <Compile Include="AdminRepo\TransactionLog\TransactionLogRepository.cs" />
+    <Compile Include="AdminRepo\TxnUpdate\ITxnUpdateRepository.cs" />
+    <Compile Include="AdminRepo\TxnUpdate\TxnUpdateRepository.cs" />
+    <Compile Include="AdminRepo\UserMaster\IUserApiRepository.cs" />
+    <Compile Include="AdminRepo\SubAdmin\ISubAdminRepository.cs" />
+    <Compile Include="AdminRepo\SubAdmin\SubAdminRepository.cs" />
+    <Compile Include="AdminRepo\UserMaster\UserApiRepository.cs" />
+    <Compile Include="AfroBasketRepo\AfroBasketRepository.cs" />
+    <Compile Include="AfroBasketRepo\IAfroBasketRepository.cs" />
+    <Compile Include="AirtimeRepo\AirtimeRepository.cs" />
+    <Compile Include="AirtimeRepo\IAirtimeRepository.cs" />
+    <Compile Include="ApiHelpPage\ApiHelpPageRespository.cs" />
+    <Compile Include="ApiHelpPage\IApiHelpPageRespository.cs" />
+    <Compile Include="AppDownloadLog\AppDownloadLogRepository.cs" />
+    <Compile Include="AppDownloadLog\IAppDownloadLogRepository.cs" />
+    <Compile Include="BillPaymentRepository\BillsPaymentRepository.cs" />
+    <Compile Include="BillPaymentRepository\IBillPaymentRepository.cs" />
+    <Compile Include="CardPayment\CardPaymentRepository.cs" />
+    <Compile Include="CardPayment\ICardPaymentRepository.cs" />
+    <Compile Include="CommisionRepo\ISetCommisionRepository.cs" />
+    <Compile Include="CommisionRepo\SetCommisionRepository.cs" />
+    <Compile Include="CommonRepo\CommonRepository.cs" />
+    <Compile Include="CommonRepo\ICommonRepository.cs" />
+    <Compile Include="FlightHotelRepo\FlightBookingPaymentRepository.cs" />
+    <Compile Include="FlightHotelRepo\IFlightBookingPaymentRepository.cs" />
+    <Compile Include="InterNetProviderRepo\IInterNetProviderRepository.cs" />
+    <Compile Include="InterNetProviderRepo\InterNetProviderRepository.cs" />
+    <Compile Include="MasterData\IMasterDataRepository.cs" />
+    <Compile Include="MasterData\MasterDataRepository.cs" />
+    <Compile Include="MerchantPaymentRepo\IMerchantPaymentRepository.cs" />
+    <Compile Include="MerchantPaymentRepo\MerchantPaymentRepository.cs" />
+    <Compile Include="MobileMoneyRepo\IMobileMoneyRepository.cs" />
+    <Compile Include="MobileMoneyRepo\MobileMoneyRepository.cs" />
+    <Compile Include="PaymentRequestRepo\IPaymentRequestRepository.cs" />
+    <Compile Include="PaymentRequestRepo\PaymentRequestRepository.cs" />
+    <Compile Include="PayMoneyRepo\IPayMoneyRepository.cs" />
+    <Compile Include="PayMoneyRepo\PayMoneyRepository.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PushNotificationRepo\IPushNotificationRepository.cs" />
+    <Compile Include="PushNotificationRepo\PushNotificationRepository.cs" />
+    <Compile Include="ThridPartyApiRepo\IThridPartyApiRepository.cs" />
+    <Compile Include="ThridPartyApiRepo\ThridPartyApiRepository.cs" />
+    <Compile Include="TokenRepo\ITokenRepository.cs" />
+    <Compile Include="TokenRepo\TokenRepository.cs" />
+    <Compile Include="TransferToBankRepo\ITransferToBankRepository.cs" />
+    <Compile Include="TransferToBankRepo\TransferToBankRepository.cs" />
+    <Compile Include="TvRepo\ITvRepository.cs" />
+    <Compile Include="TvRepo\TvRepository.cs" />
+    <Compile Include="UserRepo\IWalletUserRepository.cs" />
+    <Compile Include="UserRepo\WalletUserRepository.cs" />
+    <Compile Include="WalletSetting\IWalletSettingRepository.cs" />
+    <Compile Include="WalletSetting\WalletSettingRepository.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ezipay.Database\Ezipay.Database.csproj">
+      <Project>{565ee271-3718-42f3-9776-c0b2cccecdc4}</Project>
+      <Name>Ezipay.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.Utility\Ezipay.Utility.csproj">
+      <Project>{87bca162-0e74-492c-b0e8-b9505d01fd23}</Project>
+      <Name>Ezipay.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.ViewModel\Ezipay.ViewModel.csproj">
+      <Project>{d345dda5-5f64-4308-ad74-ae80691787c9}</Project>
+      <Name>Ezipay.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebRepo\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

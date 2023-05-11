@@ -1,0 +1,59 @@
+﻿@{
+    Layout = null;
+
+}
+
+
+
+<!DOCTYPE html>
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <link href="~/Content/StyleSheet.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+    <section class="reg-main">
+        <div class="col-md-12 axa-reg">
+            <div class="thanks text-center">
+                <div>
+
+                    <img src="http://api.ezipaygh.com/content/img/mainlogo.png" />
+                    @*<img src="~/Images/ezeepay_logo.png" />*@
+                </div>
+                @if (!string.IsNullOrEmpty(ViewBag.Success))
+                {
+                    <div class="tick_wrap">
+
+                        <img src="@Url.Content("~/Content/img/tick.png")" />
+                    </div>
+                    <p>@ViewBag.Success</p>
+                }
+                @if (!string.IsNullOrEmpty(ViewBag.Failure))
+                {
+                    <div class="tick_wrap">
+
+                        <img src="@Url.Content("~/Content/img/error.png")" />
+                    </div>
+                    <p>@ViewBag.Failure</p>
+                }
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+
+            $('.axa-reg').height(window.innerHeight);
+
+        })
+    </script>
+</body>
+</html>
+

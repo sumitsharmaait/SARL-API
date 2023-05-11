@@ -1,0 +1,4 @@
+
+PayBankGhanamobilemone :- InvoiceNumber - EZZT-2022-853 {"account_bank":"VODAFONE","account_number":"2330507711109","amount":1,"currency":"GHS","reference":"EZZT-2022-853","beneficiary_name":null,"meta":{"sender":"amit saini","sender_country":"+234","mobile_number":"+2348368537089"}}
+PayBankGhanamobilemone :- InvoiceNumber - EZZT-2022-855 {"account_bank":"VODAFONE","account_number":"2330507711109","amount":1,"currency":"GHS","reference":"EZZT-2022-855","beneficiary_name":null,"meta":{"sender":"amit saini","sender_country":"IN","mobile_number":"918368537089"}}
+PayBankGhanamobilemone :- InvoiceNumber - EZZT-2022-856 {"account_bank":"VODAFONE","account_number":"2330507711109","amount":1,"currency":"GHS","reference":"EZZT-2022-856","beneficiary_name":"checkin","meta":{"sender":"amit saini","sender_country":"IN","mobile_number":"918368537089"}}

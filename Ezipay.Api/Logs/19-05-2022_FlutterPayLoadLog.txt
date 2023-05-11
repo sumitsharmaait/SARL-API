@@ -1,0 +1,2 @@
+
+SaveflutterCardRequestDetailUSD :- InvoiceNumber EZZT-2022-840 {"customer":{"email":"amitvb.saini@gmail.com"},"currency":"USD","tx_ref":"EZZT-2022-840","amount":"1.66","redirect_url":"http://localhost:63159/MasterCardPayment/SaveflutterCardPaymentResponse","payment_options":"card"}

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D345DDA5-5F64-4308-AD74-AE80691787C9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ezipay.ViewModel</RootNamespace>
+    <AssemblyName>Ezipay.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NuGet.Frameworks, Version=4.6.1.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\NuGet.Frameworks.4.6.1\lib\net46\NuGet.Frameworks.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Annotations, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Primitives, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Primitives.4.3.0\lib\net46\System.Runtime.Serialization.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization.Xml, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Serialization.Xml.4.3.0\lib\net46\System.Runtime.Serialization.Xml.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdminViewModel\ChargeBackVM.cs" />
+    <Compile Include="AdminViewModel\DuplicateCardNoVM.cs" />
+    <Compile Include="AdminViewModel\CashdepositrequestVM.cs" />
+    <Compile Include="AdminViewModel\AdminMobileMoneyLimitVM.cs" />
+    <Compile Include="AdminViewModel\AuthenticationApiVM.cs" />
+    <Compile Include="AdminViewModel\BannerVM.cs" />
+    <Compile Include="AdminViewModel\CallBackVM.cs" />
+    <Compile Include="AdminViewModel\ReversalUBAVM.cs" />
+    <Compile Include="AdminViewModel\WalletTxnVM.cs" />
+    <Compile Include="AdminViewModel\TransactionLimitAUVM.cs" />
+    <Compile Include="AdminViewModel\CurrencyVM.cs" />
+    <Compile Include="AdminViewModel\DownloadReportVM.cs" />
+    <Compile Include="AdminViewModel\MerchantVM.cs" />
+    <Compile Include="AdminViewModel\ReportRequest.cs" />
+    <Compile Include="AdminViewModel\SubAdminVM.cs" />
+    <Compile Include="AdminViewModel\SubscriptionVM.cs" />
+    <Compile Include="AdminViewModel\TransactionLogVM.cs" />
+    <Compile Include="AdminViewModel\UserDetailsResponse.cs" />
+    <Compile Include="AdminViewModel\UserListResponse.cs" />
+    <Compile Include="AfroBasketViewModel\AfroBasketVM.cs" />
+    <Compile Include="AirtimeFrVm\AirtimeFrViewModel.cs" />
+    <Compile Include="AirtimeViewModel\AirtimeVM.cs" />
+    <Compile Include="ApiHelpPage\ApiHelpPageModel.cs" />
+    <Compile Include="AppDownloadLog\AppDownloadVM.cs" />
+    <Compile Include="BannerViewModel\BannerVM.cs" />
+    <Compile Include="BillViewModel\BillPaymentVM.cs" />
+    <Compile Include="BundleViewModel\BundleResponseVM.cs" />
+    <Compile Include="CardPaymentViewModel\CardPaymentHelper.cs" />
+    <Compile Include="CardPaymentViewModel\CardPaymentVM.cs" />
+    <Compile Include="ChannelViewModel\ChannelVMModel.cs" />
+    <Compile Include="CheckPasswordViewModel\CheckPasswordVM.cs" />
+    <Compile Include="CommisionViewModel\CommisionVM.cs" />
+    <Compile Include="common\CryptographyViewModel.cs" />
+    <Compile Include="common\Response.cs" />
+    <Compile Include="common\ResponseMessages.cs" />
+    <Compile Include="DashBoardViewModel\DashBoardVM.cs" />
+    <Compile Include="Enums\CommonEnums.cs" />
+    <Compile Include="Enums\ThirdPartyEnums.cs" />
+    <Compile Include="Enums\TokenEnums.cs" />
+    <Compile Include="Enums\UserEnums.cs" />
+    <Compile Include="Enums\WalletTransactionEnums.cs" />
+    <Compile Include="FlightHotelViewModel\FlightBookingResponse.cs" />
+    <Compile Include="InternatinalRechargeViewModel\InternatinalRechargeVM.cs" />
+    <Compile Include="MasterDataViewModel\MasterDataVM.cs" />
+    <Compile Include="MerchantPaymentViewModel\MerchantPaymentVM.cs" />
+    <Compile Include="PaymentGetway\PaymentGetwayVM.cs" />
+    <Compile Include="PayMoneyViewModel\PayMoneyVM.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ResortViewModel\ResortVM.cs" />
+    <Compile Include="SendEmailViewModel\SendEmailVM.cs" />
+    <Compile Include="SendOtpViewModel\SendOtpVM.cs" />
+    <Compile Include="SendPushViewModel\SendPushVM.cs" />
+    <Compile Include="ShareAndEarnViewModel\ShareAndEarnVM.cs" />
+    <Compile Include="ThridPartyApiVIewModel\ThridPartyApiVM.cs" />
+    <Compile Include="TokenViewModel\TokenVM.cs" />
+    <Compile Include="TransferToBankViewModel\TransferToBankVM.cs" />
+    <Compile Include="WalletUserVM\WalletUserViewModel.cs" />
+    <Compile Include="WiflixVM\WiflixUserModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Ezipay.Database\Ezipay.Database.csproj">
+      <Project>{565EE271-3718-42F3-9776-C0B2CCCECDC4}</Project>
+      <Name>Ezipay.Database</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,10 @@
+
+MobileMoneyservice :-jsonReq :Ezipay.ViewModel.AirtimeViewModel.AddMobileMoneyAggregatoryRequest
+MobileMoneyservice :-jsonReq :Ezipay.ViewModel.AirtimeViewModel.AddMobileMoneyAggregatoryRequest
+MobileMoneyservice :-jsonReq :Ezipay.ViewModel.AirtimeViewModel.AddMobileMoneyAggregatoryRequest
+MobileMoneyservice :-jsonReq :Ezipay.ViewModel.AirtimeViewModel.AddMobileMoneyAggregatoryRequest
+MobileMoneyservice :-jsonReq {"Signature":"54faa498c1e6b8f74941b063b747251b02b967380cadfbff67b1e079c5cb1a37","ApiKey":"8F6064D4-7149-4AC0-911A-4ED5E5C8165C","ServiceType":"CREDIT","servicecategory":"francophone","Channel":"Orange","Amount":"500","Customer":"0749895231","Country":"CI","TransactionId":"EZZT-2022-847","InvoiceNo":null,"Sender":null,"Recipient":null}
+MobileMoneyservice :-lineno. 425 InvoiceNumber :EZZT-2022-847
+MobileMoneyservice :-jsonReq {"Signature":"d6053f3478a98c3ec99274b87dcff4b036152baedc49f6ce390f9f7623c157f5","ApiKey":"8F6064D4-7149-4AC0-911A-4ED5E5C8165C","ServiceType":"CREDIT","servicecategory":"francophone","Channel":"Orange","Amount":"500","Customer":"0749895231","Country":"CI","TransactionId":"EZZT-2022-848","InvoiceNo":null,"Sender":null,"Recipient":null}
+MobileMoneyservice :-lineno. 425 InvoiceNumber :EZZT-2022-848
+MobileMoneyservice :-jsonReq {"Signature":"88de28b5ad7544ecd3b7fc78fcf1dc80469efa27b3118db3e8801b7804c455b9","ApiKey":"8F6064D4-7149-4AC0-911A-4ED5E5C8165C","ServiceType":"CREDIT","servicecategory":"francophone","Channel":"Orange","Amount":"500","Customer":"0749895231","Country":"CI","TransactionId":"EZZT-2022-849","InvoiceNo":null,"Sender":null,"Recipient":null}

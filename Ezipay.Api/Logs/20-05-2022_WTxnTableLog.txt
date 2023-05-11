@@ -1,0 +1,2 @@
+
+MobileMoneyservice :-jsonReq {"Signature":"02b8e93cb060168ed0bb1156d7a4e562133504720db435841f8d2c25885784bc","ApiKey":"8F6064D4-7149-4AC0-911A-4ED5E5C8165C","ServiceType":"CREDIT","servicecategory":"francophone","Channel":"Orange","Amount":"500","Customer":"0749895231","Country":"CI","TransactionId":"EZZT-2022-859","InvoiceNo":null,"Sender":null,"Recipient":null}

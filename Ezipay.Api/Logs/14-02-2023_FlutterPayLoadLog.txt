@@ -1,0 +1,4 @@
+
+SaveflutterCardRequestDetailbanktransferNGN :- InvoiceNumber EZB-2023-1629986 {"currency":"NGN","tx_ref":"EZB-2023-1629986","amount":"1612.04","email":"amitvb.saini@gmail.com"}
+SaveflutterCardRequestDetailbanktransferNGN :- InvoiceNumber EZB-2023-1630000 {"currency":"NGN","tx_ref":"EZB-2023-1630000","amount":1612,"email":"amitvb.saini@gmail.com"}
+SaveflutterCardRequestDetailbanktransferNGN :- InvoiceNumber EZB-2023-1630002 {"currency":"NGN","tx_ref":"EZB-2023-1630002","amount":1612,"email":"amitvb.saini@gmail.com"}

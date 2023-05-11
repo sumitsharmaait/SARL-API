@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9bed07e84d5f47409c59c0e8ea648463" Name="Diagram1">
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AddDuringPayRecord" Width="1.5" PointX="9.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AdminKey" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AdminMobileMoneyLimit" Width="1.5" PointX="14.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AdminPasswordHistory" Width="1.5" PointX="14.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AdminPermission" Width="1.5" PointX="13" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AdminUser" Width="1.5" PointX="15.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AfroBasketData" Width="1.5" PointX="11.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AfroBasketVerifyData" Width="1.5" PointX="16.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.AppDownloadLog" Width="1.5" PointX="16.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.BankDetail" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.BankList" Width="1.5" PointX="17.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Banner" Width="1.5" PointX="17.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Callback" Width="1.5" PointX="12.75" PointY="11" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CallbackListTracking" Width="1.5" PointX="15" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Cardnewaddrequest" Width="1.5" PointX="3" PointY="7.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CardNoDuplicate" Width="1.5" PointX="13.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CardPaymentRequest" Width="1.5" PointX="3" PointY="12" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CardPaymentRequest_Back" Width="1.5" PointX="3" PointY="18.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CardPaymentResponse" Width="1.5" PointX="5.25" PointY="10.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Carduseinaddmoney" Width="1.5" PointX="3" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Cashdeposituser_addmoney" Width="1.5" PointX="18.75" PointY="4.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ChargeBack" Width="1.5" PointX="5.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Commision" Width="1.5" PointX="10" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CommisionHistory" Width="1.5" PointX="18.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CommisionMaster" Width="1.5" PointX="8" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Country" Width="1.5" PointX="10.75" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.CurrencyRate" Width="1.5" PointX="15.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.EmailVerification" Width="1.5" PointX="18.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ErrorLog" Width="1.5" PointX="19.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.FAQ" Width="1.5" PointX="19.75" PointY="9.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.FaqDetail" Width="1.5" PointX="20.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Feedback" Width="1.5" PointX="7.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.FeedBackType" Width="1.5" PointX="2.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.FlightBookingData" Width="1.5" PointX="9.75" PointY="20.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.FlightHotelData" Width="1.5" PointX="20.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.freezeuser" Width="1.5" PointX="20.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.HotelBooking" Width="1.5" PointX="21.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.HotelMaster" Width="1.5" PointX="11.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MainCategory" Width="1.5" PointX="9.75" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MasterCardPaymentRequest" Width="1.5" PointX="17.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MerchantCommisionMaster" Width="1.5" PointX="19.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MerchantDocument" Width="1.5" PointX="3" PointY="26.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MerchantStore" Width="1.5" PointX="3" PointY="30.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MobileMoneySenderDetail" Width="1.5" PointX="21.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Navigation" Width="1.5" PointX="22.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Notificationalert" Width="1.5" PointX="22.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Notification" Width="1.5" PointX="3" PointY="34" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.notificationupdate" Width="1.5" PointX="13.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.OneTimePassword" Width="1.5" PointX="22.75" PointY="15.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.PageInformation" Width="1.5" PointX="23.75" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.PasswordUpdateTracking" Width="1.5" PointX="22.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.PayMoneyRequest" Width="1.5" PointX="23.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.RandomInvoiceNumber" Width="1.5" PointX="24.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.RedeemPointsHistory" Width="1.5" PointX="24.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ServiceCategory" Width="1.5" PointX="24.75" PointY="13.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.SessionToken" Width="1.5" PointX="3" PointY="40" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.SetTransactionLimit" Width="1.5" PointX="24.75" PointY="16.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ShareAndEarnDetail" Width="1.5" PointX="25.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ShareAndEarnMaster" Width="1.5" PointX="5.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.SubCategory" Width="1.5" PointX="12" PointY="7" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Subscription" Width="1.5" PointX="7.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TempToken" Width="1.5" PointX="13.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ThirdPartyPaymentByCard" Width="1.5" PointX="25.75" PointY="19.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.tmpSentEmail" Width="1.5" PointX="25.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransactionInitiateRequest" Width="1.5" PointX="19.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransactionKey" Width="1.5" PointX="9.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransactionLimitAU" Width="1.5" PointX="26.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransactionLog" Width="1.5" PointX="26.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransferToBankRequest" Width="1.5" PointX="3" PointY="44.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransferToBankRequest1" Width="1.5" PointX="3" PointY="50.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransferToBankResponse" Width="1.5" PointX="5.25" PointY="44.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransferToBankResponse1" Width="1.5" PointX="21.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserApiKey" Width="1.5" PointX="26.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserBlockUnblockDetail" Width="1.5" PointX="23.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserData" Width="1.5" PointX="25.75" PointY="26.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserDocument" Width="1.5" PointX="27.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserReferalWallet" Width="1.5" PointX="15.75" PointY="27.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.UserType" Width="1.5" PointX="27.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletMoMoOTP" Width="1.5" PointX="27.75" PointY="18.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletService" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletSetting" Width="1.5" PointX="27.75" PointY="22.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTransaction" Width="1.5" PointX="7.75" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTransactionDetail" Width="1.5" PointX="3" PointY="55.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTxnUpdateList" Width="1.5" PointX="27.75" PointY="25.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletUser" Width="1.5" PointX="0.75" PointY="23.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.webhookflutter" Width="1.5" PointX="28.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WrongPassword" Width="1.5" PointX="28.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Emailverification_5_Dec_2017" Width="1.5" PointX="28.75" PointY="14.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ErrorLog_06_Dec_2017" Width="1.5" PointX="27.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.MasterWalletService" Width="1.5" PointX="29.75" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.senderIdTypetbl" Width="1.5" PointX="5.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.tmpVerificationEMail" Width="1.5" PointX="29.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.TransactionType" Width="1.5" PointX="11.75" PointY="29.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletService_bkp" Width="1.5" PointX="29.75" PointY="17.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTransaction_Back" Width="1.5" PointX="29.75" PointY="21.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTransaction27_Nov_2017" Width="1.5" PointX="29.75" PointY="28.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.WalletTransactionBack" Width="1.5" PointX="7.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ViewUserList" Width="1.5" PointX="30.75" PointY="10.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.ViewVerificationMail" Width="1.5" PointX="23.75" PointY="30.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.vw_walletsummary" Width="1.5" PointX="31.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.Vw_wallettrans" Width="1.5" PointX="31.75" PointY="4.75" IsExpanded="true" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK_AdminPermission_Country" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK_BankDetail_WalletUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK_CallbackListTracking_CallbackListTracking" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Cardnewad__Walle__670A40DB" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__CardPayme__CardP__2610A626" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__CardPayme__Walle__24285DB4" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__CardPayme__Walle__2CBDA3B5" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__CardPayme__Walle__4830B400" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Cardusein__Walle__61516785" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__2EA5EC27" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__2F9A1060" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4924D839" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4A18FC72" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__308E3499" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__318258D2" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__32767D0B" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__336AA144" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4B0D20AB" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4C0144E4" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4CF5691D" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Commision__Walle__4DE98D56" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SubCatego__MainC__3A179ED3" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SubCatego__MainC__54968AE5" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK_MerchantDocument_WalletUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK_MerchantStore_WalletUser" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Recei__345EC57D" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Recei__3552E9B6" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Recei__4EDDB18F" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Recei__4FD1D5C8" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Sende__36470DEF" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Sende__373B3228" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Sende__50C5FA01" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__Notificat__Sende__51BA1E3A" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SessionTo__Walle__382F5661" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SessionTo__Walle__39237A9A" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SessionTo__Walle__52AE4273" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__SessionTo__Walle__53A266AC" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__TransferT__Trans__3BFFE745" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__TransferT__Trans__567ED357" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__TransferT__Walle__3B0BC30C" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__TransferT__Walle__558AAF1E" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__TransferT__Walle__5B988E2F" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__WalletTra__Walle__3CF40B7E" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__WalletTra__Walle__3DE82FB7" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__WalletTra__Walle__5772F790" ManuallyRouted="false" />
+        <AssociationConnector Association="Ewallet_Frenco_EzipayModel.FK__WalletTra__Walle__58671BC9" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="Ewallet_Frenco_EzipayModel.balance161022" Width="1.5" PointX="14.375" PointY="31.75" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

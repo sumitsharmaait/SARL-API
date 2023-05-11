@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{79FCAA34-D63B-41C2-82A2-A65C1297E2A8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Ezipay.Service</RootNamespace>
+    <AssemblyName>Ezipay.Service</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="3DS 2.5 Party">
+      <HintPath>..\..\..\..\..\Downloads\Microsoft.SkypeApp_kzf8qxf38zg5c!App\All\bin (2)\bin\3DS 2.5 Party.dll</HintPath>
+    </Reference>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.1.0, Culture=neutral, PublicKeyToken=0e99375e54769942, processorArchitecture=MSIL">
+      <HintPath>..\packages\Portable.BouncyCastle.1.8.1.3\lib\net40\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="CloudrailSI, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.Api.1.0.7\lib\CloudrailSI.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.3.4.1\lib\net40\Common.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Common.Logging.Core, Version=3.4.1.0, Culture=neutral, PublicKeyToken=af08829b84f0328e, processorArchitecture=MSIL">
+      <HintPath>..\packages\Common.Logging.Core.3.4.1\lib\net40\Common.Logging.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.0.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib, Version=1.0.0.999, Culture=neutral, PublicKeyToken=1b03e6acf1164f73, processorArchitecture=MSIL">
+      <HintPath>..\packages\SharpZipLib.1.0.0\lib\net45\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.barcodes, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.barcodes.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.forms, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.forms.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.io, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.io.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.kernel, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.kernel.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.layout, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.layout.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.pdfa, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.pdfa.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.sign, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.sign.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.styledxmlparser, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.styledxmlparser.dll</HintPath>
+    </Reference>
+    <Reference Include="itext.svg, Version=7.1.9.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\itext7.7.1.9\lib\net40\itext.svg.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Logging, Version=1.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Logging.1.1.2\lib\net451\Microsoft.IdentityModel.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel.Tokens, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.IdentityModel.Tokens.5.1.2\lib\net451\Microsoft.IdentityModel.Tokens.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXml4Net, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats, Version=2.4.1.0, Culture=neutral, PublicKeyToken=0df73ec7942b34e1, processorArchitecture=MSIL">
+      <HintPath>..\packages\NPOI.2.4.1\lib\net45\NPOI.OpenXmlFormats.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSSL.PrivateKeyDecoder, Version=1.2.0.0, Culture=neutral, PublicKeyToken=78f5ba1b024431f9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenSSL.PrivateKeyDecoder.1.2.0\lib\net45\OpenSSL.PrivateKeyDecoder.dll</HintPath>
+    </Reference>
+    <Reference Include="OpenSSL.X509Certificate2.Provider, Version=1.2.0.0, Culture=neutral, PublicKeyToken=78f5ba1b024431f9, processorArchitecture=MSIL">
+      <HintPath>..\packages\OpenSSL.X509Certificate2.Provider.1.2.0\lib\net45\OpenSSL.X509Certificate2.Provider.dll</HintPath>
+    </Reference>
+    <Reference Include="QRCoder, Version=1.3.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\QRCoder.1.3.6\lib\net40\QRCoder.dll</HintPath>
+    </Reference>
+    <Reference Include="RestSharp, Version=106.13.0.0, Culture=neutral, PublicKeyToken=598062e77f915f75, processorArchitecture=MSIL">
+      <HintPath>..\packages\RestSharp.106.13.0\lib\net452\RestSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Common, Version=4.0.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Drawing.Common.4.5.0\lib\net461\System.Drawing.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.1.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.1.2\lib\net451\System.IdentityModel.Tokens.Jwt.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http, Version=4.1.1.3, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.4\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Http">
+      <HintPath>..\Ezipay.Api\bin\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Twilio, Version=5.31.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Twilio.5.31.4\lib\net451\Twilio.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\Cashdepositrequest\CashdepositrequestService.cs" />
+    <Compile Include="Admin\Cashdepositrequest\ICashdepositrequestService.cs" />
+    <Compile Include="Admin\AdminMobileMoneyLimit\AdminMobileMoneyLimitService.cs" />
+    <Compile Include="Admin\AdminMobileMoneyLimit\IAdminMobileMoneyLimitService.cs" />
+    <Compile Include="Admin\AuthenticationService\AuthenticationApiService.cs" />
+    <Compile Include="Admin\AuthenticationService\IAuthenticationApiService.cs" />
+    <Compile Include="Admin\Banner\BannerService.cs" />
+    <Compile Include="Admin\Banner\IBannerService.cs" />
+    <Compile Include="Admin\Callback\CallbackService.cs" />
+    <Compile Include="Admin\Callback\ICallbackService.cs" />
+    <Compile Include="Admin\ChargeBack\ChargeBackService.cs" />
+    <Compile Include="Admin\ChargeBack\IChargeBackService.cs" />
+    <Compile Include="Admin\Commission\CommissionService.cs" />
+    <Compile Include="Admin\Commission\ICommissionService.cs" />
+    <Compile Include="Admin\Currency\CurrencyConvertService.cs" />
+    <Compile Include="Admin\Currency\ICurrencyConvertService.cs" />
+    <Compile Include="Admin\DashBoardService\DashBoardServices.cs" />
+    <Compile Include="Admin\DashBoardService\IDashBoardServices.cs" />
+    <Compile Include="Admin\Merchant\IMerchantService.cs" />
+    <Compile Include="Admin\Merchant\MerchantService.cs" />
+    <Compile Include="Admin\Report\IReportService.cs" />
+    <Compile Include="Admin\Report\ReportService.cs" />
+    <Compile Include="Admin\Resort\IResortService.cs" />
+    <Compile Include="Admin\Resort\ResortService.cs" />
+    <Compile Include="Admin\ReversalUBA\IReversalUBAService.cs" />
+    <Compile Include="Admin\ReversalUBA\ReversalUBAService.cs" />
+    <Compile Include="Admin\ShareAndEarn\IShareAndEarnService.cs" />
+    <Compile Include="Admin\ShareAndEarn\ShareAndEarnService.cs" />
+    <Compile Include="Admin\SubAdmin\ISubAdminService.cs" />
+    <Compile Include="Admin\SubAdmin\SubAdminService.cs" />
+    <Compile Include="Admin\Subscription\ISubscriptionService.cs" />
+    <Compile Include="Admin\Subscription\SubscriptionService.cs" />
+    <Compile Include="Admin\TransactionLimitAU\TransactionLimitAUService.cs" />
+    <Compile Include="Admin\TransactionLimitAU\ITransactionLimitAUService.cs" />
+    <Compile Include="Admin\TransactionLog\ITransactionLogService.cs" />
+    <Compile Include="Admin\TransactionLog\TransactionLogService.cs" />
+    <Compile Include="Admin\TxnUpdate\ITxnUpdateService.cs" />
+    <Compile Include="Admin\TxnUpdate\TxnUpdateService.cs" />
+    <Compile Include="Admin\UserManagement\IUserApiService.cs" />
+    <Compile Include="Admin\UserManagement\UserApiService.cs" />
+    <Compile Include="AfroBasket\AfroBasketService.cs" />
+    <Compile Include="AfroBasket\IAfroBasketService.cs" />
+    <Compile Include="AirtimeService\AirtimeService.cs" />
+    <Compile Include="AirtimeService\IAirtimeService.cs" />
+    <Compile Include="ApiHelpPage\ApiHelpPageService.cs" />
+    <Compile Include="ApiHelpPage\IApiHelpPageService.cs" />
+    <Compile Include="AppDownloadLog\AppDownloadLogService.cs" />
+    <Compile Include="AppDownloadLog\IAppDownloadLogService.cs" />
+    <Compile Include="BillPaymentService\BillPaymentServices.cs" />
+    <Compile Include="BillPaymentService\IBillPaymentService.cs" />
+    <Compile Include="CardPayment\CardPaymentService.cs" />
+    <Compile Include="CardPayment\ICardPaymentService.cs" />
+    <Compile Include="CommisionService\ISetCommisionService.cs" />
+    <Compile Include="CommisionService\SetCommisionService.cs" />
+    <Compile Include="CommonService\CommonServices.cs" />
+    <Compile Include="CommonService\ICommonServices.cs" />
+    <Compile Include="EzipayPartner\EzipayPartnerService.cs" />
+    <Compile Include="EzipayPartner\IEzipayPartnerService.cs" />
+    <Compile Include="FlightHotelService\FlightBookingPaymentService.cs" />
+    <Compile Include="FlightHotelService\IFlightBookingPaymentService.cs" />
+    <Compile Include="InternatinalRechargeServ\IInternatinalRechargeService.cs" />
+    <Compile Include="InternatinalRechargeServ\InternatinalRechargeService.cs" />
+    <Compile Include="InterNetProviderService\IInterNetProviderService.cs" />
+    <Compile Include="InterNetProviderService\InterNetServiceProviderService.cs" />
+    <Compile Include="MasterData\IMasterDataService.cs" />
+    <Compile Include="MasterData\MasterDataService.cs" />
+    <Compile Include="MerchantPayment\IMerchantPaymentService.cs" />
+    <Compile Include="MerchantPayment\MerchantPaymentService.cs" />
+    <Compile Include="MobileMoneyService\IMobileMoneyServices.cs" />
+    <Compile Include="MobileMoneyService\MobileMoneyServices.cs" />
+    <Compile Include="PaymentGetway\IPaymentGetwayService.cs" />
+    <Compile Include="PaymentGetway\PaymentGetwayService.cs" />
+    <Compile Include="PaymentRequestService\IPaymentRequestServices.cs" />
+    <Compile Include="PaymentRequestService\PaymentRequestServices.cs" />
+    <Compile Include="PayMoney\IPayMoneyService.cs" />
+    <Compile Include="PayMoney\PayMoneyService.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ThridPartyApiService\IThridPartyApiServices.cs" />
+    <Compile Include="ThridPartyApiService\ThridPartyApiServices.cs" />
+    <Compile Include="TokenService\ITokenService.cs" />
+    <Compile Include="TokenService\TokenService.cs" />
+    <Compile Include="TransferTobankService\ITransferToBankServices.cs" />
+    <Compile Include="TransferTobankService\TransferToBankServices.cs" />
+    <Compile Include="EzipayWebhookService\IEzipayWebhookService.cs" />
+    <Compile Include="EzipayWebhookService\EzipayWebhookService.cs" />
+    <Compile Include="TvService\ITvServices.cs" />
+    <Compile Include="TvService\TvServices.cs" />
+    <Compile Include="UserService\IWalletUserService.cs" />
+    <Compile Include="UserService\WalletUserService.cs" />
+    <Compile Include="WalletSettingService\IWalletSettings.cs" />
+    <Compile Include="WalletSettingService\WalletSettings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EziPay.AWSUtils\EziPay.AWSUtils.csproj">
+      <Project>{8713be9d-d1bb-4ed0-98b0-c2cbe9b64eba}</Project>
+      <Name>EziPay.AWSUtils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.Database\Ezipay.Database.csproj">
+      <Project>{565ee271-3718-42f3-9776-c0b2cccecdc4}</Project>
+      <Name>Ezipay.Database</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.Repository\Ezipay.Repository.csproj">
+      <Project>{f8777e9b-aa11-4db3-a843-e7e11a369104}</Project>
+      <Name>Ezipay.Repository</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.Utility\Ezipay.Utility.csproj">
+      <Project>{87bca162-0e74-492c-b0e8-b9505d01fd23}</Project>
+      <Name>Ezipay.Utility</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Ezipay.ViewModel\Ezipay.ViewModel.csproj">
+      <Project>{d345dda5-5f64-4308-ad74-ae80691787c9}</Project>
+      <Name>Ezipay.ViewModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

@@ -1,0 +1,2 @@
+
+SaveflutterCardRequestDetailbanktransferNGN :- InvoiceNumber EZZT-2022-769 {"currency":"NGN","tx_ref":"EZZT-2022-769","amount":"458.42","email":"amitvb.saini@gmail.com"}

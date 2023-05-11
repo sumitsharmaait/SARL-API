@@ -1,0 +1,4 @@
+
+PayBankTransferServiceForNGNSendbankflutter :- InvoiceNumber EZZT-2022-823 {"narration":"SendBankFlutter amit saini","currency":"NGN","account_bank":"044","account_number":"111111111111122222222","amount":107,"reference":"EZZT-2022-823","callback_url":null,"debit_currency":"NGN"}
+PayBankTransferServiceForNGNSendbankflutter :- InvoiceNumber EZZT-2022-824 {"narration":"SendBankFlutter amit saini","currency":"NGN","account_bank":"011","account_number":"3191471181","amount":107,"reference":"EZZT-2022-824","callback_url":null,"debit_currency":"NGN"}
+PayBankTransferServiceForNGNSendbankflutter :- InvoiceNumber EZZT-2022-825 {"narration":"SendBankFlutter amit saini","currency":"NGN","account_bank":"011","account_number":"3191471181","amount":107,"reference":"EZZT-2022-825","callback_url":null,"debit_currency":"NGN"}

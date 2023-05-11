@@ -1,0 +1,188 @@
+﻿@model Ezipay.ViewModel.AirtimeViewModel.AddMoneyAggregatorResponse
+@{
+    ViewBag.Title = "CardPaymentConfirmationFromUBA";
+}
+
+
+@if (Model.RstKey == 1)
+{
+    <div class="outer_div">
+        <div class="container">
+            <div class="mainsec">
+                <div class="content">
+                    <img src="~/WebImages/mainlogo.png" class="logo" />
+                </div>
+                <div>
+                    <img src="~/WebImages/tick.png" class="timeicon" />
+                </div>
+                @*<div>
+                        <img src="~/WebImages/error.png" />
+                    </div>*@
+
+                <div class="amountt">
+                    <span>Amount : @Model.Amount XOF</span>
+                </div>
+
+                <div class="msg">
+                    <span>@Model.status Transaction Successfully </span>
+                </div>
+
+                <div class="msg">
+                    <span>Invoice No : @Model.InvoiceNo</span>
+                </div>
+                <div class="amount">
+                    <span>Date : @Model.TransactionDate</span>
+                </div>
+                @*<div class="amount">
+                    <span>CurrentBalance :₵ @Model.CurrentBalance</span>
+                </div>*@
+                <div class="amount">
+                    <a href="https://www.ezipaysarl.com/#/">Back To Home</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+else if (Model.RstKey == 2)
+{
+    <div class="outer_div">
+        <div class="container">
+            <div class="mainsec">
+                <div class="content">
+                    <img src="~/WebImages/mainlogo.png" class="logo" />
+                </div>
+                <div>
+                    <img src="~/WebImages/tick.png" class="timeicon" />
+                </div>
+                @*<div>
+                        <img src="~/WebImages/error.png" />
+                    </div>*@
+
+                <div class="amountt">
+                    <span>Amount : @Model.Amount XOF</span>
+                </div>
+
+                <div class="msg">
+                    <span>@Model.status Transaction Pending </span>
+                </div>
+
+                <div class="msg">
+                    <span>Invoice No : @Model.InvoiceNo</span>
+                </div>
+                <div class="amount">
+                    <span>Date: @Model.TransactionDate</span>
+                </div>
+                @*<div class="amount">
+                    <span>CurrentBalance :₵ @Model.CurrentBalance</span>
+                </div>*@
+                <div class="amount">
+                    <a href="https://www.ezipaysarl.com/#/">Back To Home</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+else
+{
+    <div class="outer_div">
+        <div class="container">
+            <div class="mainsec">
+                <div class="content">
+                    <img src="~/WebImages/mainlogo.png" class="logo" />
+                </div>
+                @*<div>
+            <img src="~/WebImages/tick.png" class="timeicon" />
+        </div>*@
+                <div>
+                    <img src="~/WebImages/error.png" />
+                </div>
+
+                @*<div class="amountt">
+            <span>Amount :₵ @Model.Amount</span>
+        </div>*@
+
+                <div class="msg">
+                    <span>Error</span>
+                </div>
+                @*<div class="amount">
+            <span>@Model.AccountNo</span>
+        </div>
+        <div class="msg">
+            <span>Wallet Txn:@Model.TransactionId</span>
+        </div>
+        <div class="amount">
+            <span>Date:@Model.TransactionDate</span>
+        </div>
+        <div class="amount">
+            <span>CurrentBalance :₵ @Model.CurrentBalance</span>
+        </div>*@
+                <div class="amount">
+                    <a href="https://www.ezipaysarl.com/#/">Back To Home</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+}
+
+
+
+<style>
+    .outer_div {
+        border-style: solid;
+        /*margin-right: 100px;
+        position: absolute;*/
+    }
+
+    .container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        /*display: flex;
+        justify-content: center;
+        align-items: center;*/
+    }
+
+    .mainsec {
+        width: 600px;
+        border: 1px solid #e5dfdf;
+        text-align: center;
+        margin: auto;
+        padding: 80px 50px;
+        border-radius: 30px;
+    }
+
+    .logo {
+        width: 210px;
+        padding: 20px 0;
+    }
+
+    .amount {
+        font-size: 25px;
+        padding: 10px 0;
+    }
+
+    .timeicon {
+        width: 50px;
+        height: 50px;
+        margin: 20px 0;
+    }
+
+    .msg {
+        font-size: 30px;
+        padding: 10px 0;
+        color: gray;
+        font-size: 20px;
+    }
+
+    .amountt {
+        font-size: 30px;
+        padding: 10px 0;
+        color: steelblue;
+    }
+</style>
+
+
